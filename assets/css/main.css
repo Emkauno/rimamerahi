@@ -25,5 +25,124 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0.9) 60%, #f1dbdd), url(../img/catering.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.container .holder {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .container .holder {
+    width: 80%;
+  }
+}
+
+.container .holder img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadein .5s ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.container .holder p {
+  color: #d45464;
+  text-align: center;
+  font-size: 2.5vw;
+  animation: fadein .5s ease;
+  animation-delay: 1.1s;
+  animation-fill-mode: backwards;
+}
+
+@media (max-width: 700px) {
+  .container .holder p {
+    font-size: 4.5vw;
+  }
+}
+
+.container .holder p span {
+  font-weight: 700;
+  color: #bd4b58;
+}
+
+.container .holder .wsp {
+  animation: fadein .5s ease;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .container .holder .wsp {
+    width: 120px;
+  }
+}
+
+.container .holder .wsp a {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all .3s ease;
+}
+
+.container .holder .wsp a:hover {
+  transform: scale(1.05);
+}
+
+.container .holder .wsp a img {
+  width: 70%;
+}
+
+@media (max-width: 700px) {
+  .container .holder .wsp a img {
+    width: 100%;
+  }
+}
+
+.container .holder .wsp a p {
+  font-size: 0.8vw;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .container .holder .wsp a p {
+    font-size: 1.8vw;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .container .holder .wsp a p {
+    font-size: 2.5vw;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */
